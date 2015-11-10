@@ -1,0 +1,3 @@
+---
+- name: Remove GDM3 and stop
+  user: name={{ myuser }} password={{ mypass }} shell=/bin/zsh groups=adm,dialout,cdrom,floppy,sudo,audio,dip,video,plugdev,staff,netdev

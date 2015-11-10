@@ -1,0 +1,5 @@
+- name: Chanage grub timeout
+  lineinfile: dest=/etc/default/grub state=present regexp="^GRUB_TIMEOUT=" line=GRUB_TIMEOUT={{ timeout }}
+
+- name: update grub config
+  command: /usr/sbin/update-grub

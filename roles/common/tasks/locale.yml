@@ -1,0 +1,6 @@
+---
+- name: Enable en locale
+  locale_gen: name={{ locale }} state=present
+
+- name: Update default locale
+  command: /usr/sbin/update-locale LANG={{ locale }}

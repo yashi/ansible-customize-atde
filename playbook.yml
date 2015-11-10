@@ -1,0 +1,5 @@
+---
+- name: ATDE Customization
+  hosts: atde
+  roles:
+     - common

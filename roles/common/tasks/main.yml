@@ -1,0 +1,7 @@
+- include: locale.yml locale=en_US.UTF-8
+- include: grub.yml timeout=1
+- include: packages.yml
+# User 'atmark' is special enable it iff you know what you are doing
+# - include: rm-atmark-user.yml
+- include: add-my-user.yml
+- include: reboot.yml

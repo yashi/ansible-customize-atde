@@ -1,0 +1,12 @@
+---
+- name: Remove GDM3 and stop
+  apt: name=gdm3 state=absent purge=yes
+
+- name: Install Zsh
+  apt: name=zsh purge=yes update_cache=yes
+
+- name: Purge removed packages
+  command: aptitude -q -y purge '~c'
+
+- name: Update
+  apt: upgrade=dist

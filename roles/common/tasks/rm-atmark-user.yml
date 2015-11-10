@@ -1,0 +1,3 @@
+---
+- name: Remove Atmark User
+  user: name=atmark state=absent remove=yes
